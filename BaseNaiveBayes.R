@@ -8,8 +8,7 @@ set.seed(666)
 iris <-h2o.importFile("https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data")
 # view its contents
 View(as.data.frame(iris))
-# set the predictor names
-predictors <-colnames(iris)[-length(iris)]
+
 
 
 # split into train 80% and validation 10% and performance 10%
